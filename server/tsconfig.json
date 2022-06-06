@@ -1,0 +1,20 @@
+{
+    "extends": "@tsconfig/node14/tsconfig.json",
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "strictPropertyInitialization": false,
+      "strictNullChecks": false,
+      "outDir": "./build"
+      
+    },
+    "exclude": [
+      "node_modules",
+      "**/node_modules/*"
+    ],
+    "include": [
+      "app.ts",
+      "src/**/*",
+      "jest.config.ts"  
+    ]
+  }
